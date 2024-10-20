@@ -105,7 +105,7 @@ function takeCommand(message){
     }
 
     else {
-        window.open(`https://www.google.com ${message.replace(" ", "+")}`, "_blank");
+        window.open(`https://www.google.co.in/${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
         speak(finalText);
     }
