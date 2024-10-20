@@ -53,7 +53,7 @@ btn.addEventListener('click', ()=>{
 })
 
 function takeCommand(message){
-    if(message.includes('hey') || message.includes('hello')){
+    if(message.includes('hey Nexa') || message.includes('hello Nexa')){
         speak("Hello Sir, How May I Help You?");
     }
     else if(message.includes("open google")){
