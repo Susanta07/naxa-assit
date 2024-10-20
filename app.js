@@ -105,8 +105,8 @@ function takeCommand(message){
     }
 
     else {
-        window.open(`https://m.youtube.com/#voice-search${message.replace(" ", "+")}`, "_blank");
-        const finalText = "I found some information for " + message + " on YouTube";
+        window.open(`https://www.google.co.in/#sbfbu=1&pi=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "I found some information for " + message + " on Google";
         speak(finalText);
     }
 }
