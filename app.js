@@ -53,16 +53,16 @@ btn.addEventListener('click', ()=>{
 })
 
 function takeCommand(message){
-    if(message.includes('hey Nexa') || message.includes('hello Nexa')){
-        speak("Hello Sir, How May I Help You?");
+    if(message.includes('hey') || message.includes('hello')){
+        speak("Hello, How May I Help You?");
     }
     else if(message.includes("open google")){
         window.open("https://google.com", "_blank");
         speak("Opening Google...")
     }
      else if(message.includes("Play song")){
-        window.open("https://open.spotify.com/", "_blank");
-        speak("Opening Spotify...")
+        window.open("https://wynk.in/music/search", "_blank");
+        speak("Opening wynk music...")
      }    
     else if(message.includes("open youtube")){
         window.open("https://youtube.com", "_blank");
@@ -103,9 +103,5 @@ function takeCommand(message){
         const finalText = "Opening Calculator";
         speak(finalText);
     }
-     else {
-        window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "I found some information for " + message + " ";
-        speak(finalText);
-    }
+    
 }
