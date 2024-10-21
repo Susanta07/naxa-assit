@@ -103,10 +103,9 @@ function takeCommand(message){
         const finalText = "Opening Calculator";
         speak(finalText);
     }
-
-    else {
-        window.open(`https://www.google.co.in/${message.replace(" ", "+")}`, "_blank");
-        const finalText = "I found some information for " + message + " on Google";
+     else {
+        window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "I found some information for " + message + " ";
         speak(finalText);
     }
 }
