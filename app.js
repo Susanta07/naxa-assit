@@ -100,8 +100,12 @@ function takeCommand(message){
 
     else if(message.includes('calculator')) {
         window.open('Calculator:///')
-        const finalText = "Opening Calculator";
+        const finalText = "Opening Calculator"; 
         speak(finalText);
     }
-    
+     else {
+        window.open(https://www.google.com/search?q=${message.replace(" ", "+")}, "_blank");
+        const finalText = "I found some information for " + message + " ";
+        speak(finalText);
+    }
 }
